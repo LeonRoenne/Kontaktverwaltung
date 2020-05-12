@@ -1,0 +1,147 @@
+﻿<Window x:Class="Kontaktverwaltung.EditCreateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kontaktverwaltung"
+        mc:Ignorable="d"
+        x:Name="EditCreateWindowUi" Title="EditCreateWindow" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Orientation="Horizontal" >
+            <StackPanel Orientation="Vertical" Margin="0, 0, 0, 35" >
+                <TextBlock Text="Kontaktdaten" Margin="10" FontWeight="Bold" />
+                <StackPanel Orientation="Horizontal" Margin="10" >
+                    <TextBlock Text="Anzeigename*" Width="110" />
+                    <TextBox x:Name="tbDisplayName" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Name*" Width="110" />
+                    <TextBox x:Name="tbSurName" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Vorname*" Width="110" />
+                    <TextBox x:Name="tbName" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Geschlecht*" Width="110" />
+                    <ComboBox ItemsSource="{Binding Source={local:EnumBindingSource {x:Type local:Sex}}}" x:Name="CBSex" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Anrede" Width="110" />
+                    <TextBox x:Name="tbTitle" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="SpAdress0" Orientation="Vertical" Margin="0, 0, 0, 35" >
+                <TextBlock Text="Adresse" Margin="10" FontWeight="Bold" />
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Straße" Width="110" />
+                    <TextBox x:Name="tbStreet" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Hausnummer" Width="110" />
+                    <TextBox x:Name="tbHouseNumber" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="PLZ"  Width="110"/>
+                    <TextBox x:Name="tbPostalCode" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Ort"  Width="110"/>
+                    <TextBox x:Name="tbCity" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="E-Mail"  Width="110"/>
+                    <TextBox x:Name="tbEmail" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Mobil"  Width="110"/>
+                    <TextBox x:Name="tbMobileNr" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Telefonnummer"  Width="110"/>
+                    <TextBox x:Name="tbPhoneNr" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Faxnummer"  Width="110"/>
+                    <TextBox x:Name="tbFaxNr" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="SpAdress1" Orientation="Vertical" Margin="0, 0, 0, 35" >
+                <TextBlock Text="2. Adresse" Margin="10" FontWeight="Bold" />
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Straße" Width="110" />
+                    <TextBox x:Name="tbStreet1" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Hausnummer" Width="110" />
+                    <TextBox x:Name="tbHouseNumber1" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="PLZ"  Width="110"/>
+                    <TextBox x:Name="tbPostalCode1" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Ort"  Width="110"/>
+                    <TextBox x:Name="tbCity1" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="E-Mail"  Width="110"/>
+                    <TextBox x:Name="tbEmail1" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Mobil"  Width="110"/>
+                    <TextBox x:Name="tbMobileNr1" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Telefonnummer"  Width="110"/>
+                    <TextBox x:Name="tbPhoneNr1" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Faxnummer"  Width="110"/>
+                    <TextBox x:Name="tbFaxNr1" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="SpAdress2" Orientation="Vertical" Margin="0, 0, 0, 35" >
+                <TextBlock Text="3. Adresse" Margin="10" FontWeight="Bold" />
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Straße" Width="110" />
+                    <TextBox x:Name="tbStreet2" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Hausnummer" Width="110" />
+                    <TextBox x:Name="tbHouseNumber2" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="PLZ"  Width="110"/>
+                    <TextBox x:Name="tbPostalCode2" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Ort"  Width="110"/>
+                    <TextBox x:Name="tbCity2" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="E-Mail"  Width="110"/>
+                    <TextBox x:Name="tbEmail2" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Mobil"  Width="110"/>
+                    <TextBox x:Name="tbMobileNr2" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Telefonnummer"  Width="110"/>
+                    <TextBox x:Name="tbPhoneNr2" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Faxnummer"  Width="110"/>
+                    <TextBox x:Name="tbFaxNr2" MinWidth="200" Margin="20, 0, 0, 0" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
+            <Button Click="btEditDialogOk_Click" IsDefault="True" Name="btEditDialogOk" MinWidth="100" Margin="10" >_OK</Button>
+            <Button IsCancel="True" Name="btEditDialogCancel" MinWidth="100" Margin="10" >_Abbrechen</Button>
+            <Button Name="btEditDialogAddAdress" Click="btEditDialogAddAdress_Click" MinWidth="100" Margin="10" >Adresse Hinzufügen</Button>
+            
+        </StackPanel>
+    </Grid>
+</Window>

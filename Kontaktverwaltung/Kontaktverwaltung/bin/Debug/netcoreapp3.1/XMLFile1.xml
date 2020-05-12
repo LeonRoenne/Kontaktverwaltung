@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfArrayOfKontakt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfKontakt>
+    <Kontakt>
+      <DisplayName>asdas</DisplayName>
+      <Surname>dasda</Surname>
+      <Name>dasda</Name>
+      <Title />
+      <Sex>Männlich</Sex>
+      <Address>
+        <Street />
+        <HouseNoumber />
+        <PostalCode />
+        <City />
+        <EMail />
+        <MobileNr />
+        <PhoneNr />
+        <FaxNr />
+      </Address>
+      <Address1>
+        <Street />
+        <HouseNoumber />
+        <PostalCode />
+        <City />
+        <EMail />
+        <MobileNr />
+        <PhoneNr />
+        <FaxNr />
+      </Address1>
+      <Address2>
+        <Street />
+        <HouseNoumber />
+        <PostalCode />
+        <City />
+        <EMail />
+        <MobileNr />
+        <PhoneNr />
+        <FaxNr />
+      </Address2>
+    </Kontakt>
+  </ArrayOfKontakt>
+</ArrayOfArrayOfKontakt>
